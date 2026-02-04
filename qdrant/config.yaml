@@ -1,7 +1,14 @@
 # Configurazione base per Home Assistant addon Qdrant
+# Identificatore unico addon
+slug: "qdrant"
 name: Qdrant Vector DB
 version: "0.1.0"
 description: "Qdrant Vector Database come addon per Home Assistant. Persistenza su /data, porta configurabile."
+# Architetture supportate
+arch:
+  - amd64
+  - aarch64
+  - armv7
 startup: services
 boot: auto
 init: false
