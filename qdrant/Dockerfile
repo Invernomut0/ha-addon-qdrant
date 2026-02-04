@@ -4,9 +4,8 @@ FROM qdrant/qdrant:latest
 # Crea la cartella dati (Home Assistant monta /data)
 VOLUME ["/data"]
 
-# Copia script di avvio e config
+# Copia script di avvio
 COPY run.sh /run.sh
-COPY config.yaml /config.yaml
 RUN chmod +x /run.sh
 
 # Espone la porta (default 6333, ma sarà configurabile)
