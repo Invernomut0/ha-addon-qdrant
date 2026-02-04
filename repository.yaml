@@ -1,0 +1,5 @@
+# repository.yaml per Home Assistant addon Qdrant
+name: Qdrant Addon Repository
+url: 'https://github.com/Invernomut0/ha-addon-qdrant'
+maintainer: 'Lorenzo V <Invernomuto0@gmail.com>'
+description: 'Repository per Qdrant Vector DB come addon Home Assistant.'

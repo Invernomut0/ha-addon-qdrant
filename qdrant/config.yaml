@@ -1,0 +1,17 @@
+# Configurazione base per Home Assistant addon Qdrant
+name: Qdrant Vector DB
+version: "0.1.0"
+description: "Qdrant Vector Database come addon per Home Assistant. Persistenza su /data, porta configurabile."
+startup: services
+boot: auto
+init: false
+panel_icon: mdi:database
+host_network: true
+options:
+  port: 6333
+schema:
+  port: "int(1024,65535)"
+ports:
+  6333/tcp: 6333
+map:
+  - data:rw
